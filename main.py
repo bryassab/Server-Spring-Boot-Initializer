@@ -3,16 +3,13 @@ import time
 import os
 from io import StringIO
 
-
 key = """\
 -----BEGIN RSA PRIVATE KEY-----
 {}
 -----END RSA PRIVATE KEY-----""".format(os.getenv("KEY_VALUE"))
-
 commands = {
-    "cd": "cd Motocycle-Rental-Back-End",
-    "su": "sudo su",
-    "compile": "mvn spring-boot:run"
+    "cd": "cd proyecto",
+    "compile": "java -jar target/ortopedicWork-0.0.1-SNAPSHOT.jar"
 }
 
 def connect(ip):
